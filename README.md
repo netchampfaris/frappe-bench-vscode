@@ -1,0 +1,18 @@
+# Bench extension for VSCode
+
+This extension adds bench commands to the VSCode Command Palette
+
+## Bench Commands
+
+1. bench update
+1. bench migrate
+1. bench build
+1. bench console
+
+It also adds a command to kill bench processes
+
+## Requirements
+
+You can use the extension as long as the folder is `frappe-bench` folder or any of the `apps` folder.
+
+**Enjoy!**
