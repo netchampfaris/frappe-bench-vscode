@@ -2,7 +2,7 @@
     "name": "frappe-bench-vscode",
     "displayName": "frappe-bench-vscode",
     "description": "Bench Commands for VSCode",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "netchampfaris",
     "engines": {
         "vscode": "^1.19.0"
@@ -19,16 +19,20 @@
             {
                 "command": "extension.benchActivate",
                 "title": "Bench: Activate"
-            }, {
+            },
+            {
                 "command": "extension.benchKill",
                 "title": "Bench: Kill Processes"
-            }, {
+            },
+            {
                 "command": "extension.benchBuild",
                 "title": "Bench: Build Assets"
-            }, {
+            },
+            {
                 "command": "extension.benchConsole",
                 "title": "Bench: Open Python Console"
-            }, {
+            },
+            {
                 "command": "extension.benchUpdate",
                 "title": "Bench: Update"
             }
