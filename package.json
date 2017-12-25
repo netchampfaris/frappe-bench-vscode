@@ -2,7 +2,7 @@
     "name": "frappe-bench-vscode",
     "displayName": "frappe-bench-vscode",
     "description": "Bench Commands for VSCode",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "netchampfaris",
     "engines": {
         "vscode": "^1.19.0"
