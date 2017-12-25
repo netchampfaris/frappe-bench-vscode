@@ -33,6 +33,10 @@
                 "title": "Bench: Open Python Console"
             },
             {
+                "command": "extension.benchMigrate",
+                "title": "Bench: Migrate Site"
+            },
+            {
                 "command": "extension.benchUpdate",
                 "title": "Bench: Update"
             }
