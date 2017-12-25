@@ -47,16 +47,14 @@ export function deactivate() {
 }
 
 function tryAndGetBenchPath() {
-    let benchPath = path.resolve(__dirname);
-    if (hasValues(fs.readdirSync(benchPath), ['apps', 'sites', 'Procfile'])) {
-        return benchPath;
+    let currentFolder = vscode.workspace.workspaceFolders[0].uri.fsPath;
+    let benchPath = currentFolder;
+
+    while (!hasValues(fs.readdirSync(benchPath), ['apps', 'sites', 'Procfile'])) {
+        benchPath = path.resolve(benchPath, '..');
     }
 
-    let currentFolder = vscode.workspace.workspaceFolders[0].uri.fsPath;
-    while (path.basename(currentFolder) !== 'apps') {
-        currentFolder = path.resolve(currentFolder, '..');
-    }
-    return path.resolve(currentFolder, '..');
+    return benchPath;
 }
 
 function runSiteCommand(command) {
